@@ -1,5 +1,13 @@
-tem
-logs
-LogFiles
-.DS_Store
-.idea
+# Ignore large model files
+model/*.pth
+model/*.pkl
+
+# Ignore video files
+*.mp4
+*.avi
+
+# Raw data
+DATA_ROOT_EXVIVO/
+DATA_ROOT_INVIVO/
+
+
