@@ -110,6 +110,19 @@ def test_model(args):
         # logging.info("Precision {:>10.5f}\n".format(metrics.precision_score(gt_label, pred_label, average='micro')))
         # plot_class_band(gt_label, pred_label, os.path.join(args.pred_folder, base_name.replace(".txt", ".pdf")), "{:>4.3f}".format(acc))
     print("|| "*10, "Mean: {:10.5f}".format(sum(accs) / len(accs)))
+
+    # Read predictions
+    predictions = pd.read_csv('predictions/transformer_T_AI.txt', 
+                             sep='\t',
+                             names=['Frame', 'Phase', 'Score1', 'Score2', 'Score3', 'Score4'])
+
+    # Extract only frame numbers and phases
+    ai_labels = predictions[['Frame', 'Phase']]
+
+    # Save as AI.txt
+    output_path = os.path.join('DATA_ROOT_EXVIVO', 'Labels', 'AI.txt')
+    ai_labels.to_csv(output_path, sep='\t', index=False, header=False)
+
     return args
 
 

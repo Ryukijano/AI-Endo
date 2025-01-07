@@ -1,0 +1,11 @@
+albumentations
+imageio
+matplotlib
+networkx
+opencv-contrib-python
+pillow
+scikit-image
+yacs
+PyQt5
+setproctitle
+pytorch-metric-learning

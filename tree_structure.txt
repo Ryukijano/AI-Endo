@@ -1,0 +1,27 @@
+Directory structure for: /home/ryukijano/AI-Endo/DATA_ROOT_EXVIVO
+==================================================
+
+Images/
+├── Video1/
+│   ├── Image00001.png
+│   └── Image06234.png
+├── Video2/
+│   ├── Image00001.png
+│   └── Image07713.png
+├── Video3/
+│   ├── Image00001.png
+│   └── Image10746.png
+├── Video4/
+│   ├── Image00001.png
+│   └── Image05421.png
+
+Labels/
+├── Phase1.txt
+├── Phase2.txt
+├── Phase3.txt
+└── Phase4.txt
+
+Summary Statistics
+====================
+Total Video Directories: 4
+Total Phase Label Files: 4

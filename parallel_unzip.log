@@ -1,0 +1,7 @@
+2024-12-19 15:25:33,791 - INFO - Found 4 zip files in /home/ryukijano/AI-Endo/23506866. Starting extraction...
+2024-12-19 15:25:33,808 - INFO - Successfully extracted: InvivoTrialAnnotation.zip to /home/ryukijano/AI-Endo/23506866_extracted/Images/InvivoTrialAnnotation
+2024-12-19 15:25:33,808 - INFO - Successfully extracted: ExvivoTrialAnnotation.zip to /home/ryukijano/AI-Endo/23506866_extracted/Images/ExvivoTrialAnnotation
+2024-12-19 15:26:07,705 - INFO - Successfully extracted: InvivoAnimalTrial.zip to /home/ryukijano/AI-Endo/23506866_extracted/Images/InvivoAnimalTrial
+2024-12-19 15:26:15,977 - INFO - Successfully extracted: ExvivoAnimalTrial.zip to /home/ryukijano/AI-Endo/23506866_extracted/Images/ExvivoAnimalTrial
+2024-12-19 15:26:15,983 - INFO - 
+Unzipping completed. Success: 4, Failed: 0

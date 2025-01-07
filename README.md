@@ -16,21 +16,21 @@ conda activate AI-Endo
 </pre>
 
 <h2>Data preparation</h2>
-AI-Endo is trained with downsampled images of endoscopic video. The user may access data examples from [figshare](https://doi.org/10.6084/m9.figshare.23506866.v5), which 
-should be downloaded and arranged locally as 
+AI-Endo is trained with downsampled images of endoscopic video. The zip files are located at `/home/ryukijano/AI-Endo/23506866`. To prepare the data, extract the zip files and arrange them as follows:
+
 <pre>
-DATA_ROOT--|
-           |--Images--|
-           |          |--Video1--|
-           |          |          |--Image00001.png
-           |          |          |--Image00002.png
-           |          |...
-           |
-           |--Labels--|--Phase1.txt
-                      |--Phase2.txt
-                      |...
+/home/ryukijano/AI-Endo/23506866--|
+                             |--Images--|
+                             |          |--Video1--|
+                             |          |          |--Image00001.png
+                             |          |          |--Image00002.png
+                             |          |...
+                             |
+                             |--Labels--|--Phase1.txt
+                                        |--Phase2.txt
+                                        |...
 </pre>
-<code>DATA_ROOT</code> represents the root folder of the dataset and should be set in the config file, e.g., <code>configs/test.yml</code>, accordingly.
+<code>DATA_ROOT</code> should be set to `/home/ryukijano/AI-Endo/23506866` in the config files, e.g., <code>configs/test.yml</code>, accordingly.
 
 <h2>Train</h2>
 <p align="justify">The training process of AI-Endo includes two stages, ResNet50 and Fusion+Transformer. To execute the
